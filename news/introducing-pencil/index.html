@@ -4,21 +4,21 @@
 <head>
   <meta charset=utf-8>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=stylesheet href=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;styles.css>
-  <link rel=stylesheet href=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/styles.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/gh-fork-ribbon.css>
   <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
   <title>Introducing Pencil: A Microframework Inspired By Flask For Rust » AWWY?</title>
   <meta name="description"
     content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
 
-  <link rel="icon" href="https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;favicon.ico">
+  <link rel="icon" href="https://www.arewewebyet.org/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
   <!--  ALL THE STANDARDS for an image!-->
-  <meta itemprop="image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
-  <meta name="twitter:image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
-  <meta property="og:image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
+  <meta itemprop="image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta name="twitter:image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta property="og:image" content=https://www.arewewebyet.org/screenshot.png />
 
   <!-- Open Graph extra -->
   <meta property="og:site_name" content="Are We Web Yet?" />
@@ -53,7 +53,7 @@
          :
       </cite>
       <h2 id="a-minimal-application">A Minimal Application</h2>
-<pre><code>extern crate pencil;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">extern crate pencil;
 
 use pencil::{Pencil, Request, Response, PencilResult};
 
@@ -62,24 +62,24 @@ fn hello(_: &amp;mut Request) -&gt; PencilResult {
 }
 
 fn main() {
-    let mut app = Pencil::new(&quot;/web/hello&quot;);
-    app.get(&quot;/&quot;, &quot;hello&quot;, hello);
+    let mut app = Pencil::new(&quot;&#x2F;web&#x2F;hello&quot;);
+    app.get(&quot;&#x2F;&quot;, &quot;hello&quot;, hello);
     app.run(&quot;127.0.0.1:5000&quot;);
 }
 </code></pre>
 <h2 id="routing">Routing</h2>
-<pre><code>fn user(r: &amp;mut Request) -&gt; PencilResult {
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn user(r: &amp;mut Request) -&gt; PencilResult {
     let user_id = r.view_args.get(&quot;user_id&quot;).unwrap();
     Ok(format!(&quot;user {}&quot;, user_id).into())
 }
 
 fn main() {
-    // app here
-    app.get(&quot;/user/&lt;user_id:int&gt;&quot;, &quot;user&quot;, user);
+    &#x2F;&#x2F; app here
+    app.get(&quot;&#x2F;user&#x2F;&lt;user_id:int&gt;&quot;, &quot;user&quot;, user);
 }
 </code></pre>
 <h2 id="json-handling">JSON Handling</h2>
-<pre><code>use std::collections::BTreeMap;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use std::collections::BTreeMap;
 use pencil::jsonify;
 
 fn app_info(_: &amp;mut Request) -&gt; PencilResult {
@@ -90,12 +90,12 @@ fn app_info(_: &amp;mut Request) -&gt; PencilResult {
 }
 
 fn main() {
-    // app here
-    app.get(&quot;/info&quot;, &quot;app_info&quot;, app_info);
+    &#x2F;&#x2F; app here
+    app.get(&quot;&#x2F;info&quot;, &quot;app_info&quot;, app_info);
 }
 </code></pre>
 <h2 id="error-handling">Error Handling</h2>
-<pre><code>use pencil::HTTPError;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use pencil::HTTPError;
 
 fn page_not_found(_: HTTPError) -&gt; PencilResult {
     let mut response = Response::from(&quot;Customized 404 :)&quot;);
@@ -104,7 +104,7 @@ fn page_not_found(_: HTTPError) -&gt; PencilResult {
 }
 
 fn main() {
-    // app here
+    &#x2F;&#x2F; app here
     app.httperrorhandler(404, page_not_found);
 }
 </code></pre>
@@ -112,53 +112,53 @@ fn main() {
 <p>Just create the static folder under your application root path, it just works.
 Now you can visit http://localhost:5000/static/example.png and get your file.
 You can customize the static folder and static url path.</p>
-<pre><code>fn main() {
-    // app here
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn main() {
+    &#x2F;&#x2F; app here
     app.enable_static_file_handling();
 }
 </code></pre>
 <h2 id="templating">Templating</h2>
 <p>Just create the templates folder under your application root path, it just works.
 You can customize the template folder.</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre data-lang="html+jinja" class="language-html+jinja "><code class="language-html+jinja" data-lang="html+jinja">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;body&gt;
     &lt;h1&gt;
       Hello {{ name }}!
-    &lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    &lt;&#x2F;h1&gt;
+  &lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;
 </code></pre>
-<pre><code>fn hello_template(request: &amp;mut Request) -&gt; PencilResult {
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn hello_template(request: &amp;mut Request) -&gt; PencilResult {
     let mut context = BTreeMap::new();
     context.insert(&quot;name&quot;.to_string(), &quot;template&quot;.to_string());
     return request.app.render_template(&quot;hello.html&quot;, &amp;context);
 }
 
 fn main() {
-    // app here
+    &#x2F;&#x2F; app here
     app.register_template(&quot;hello.html&quot;);
-    app.get(&quot;/hello_template&quot;, &quot;hello_template&quot;, hello_template);
+    app.get(&quot;&#x2F;hello_template&quot;, &quot;hello_template&quot;, hello_template);
 }
 </code></pre>
 <h2 id="logging">Logging</h2>
-<pre><code>#[macro_use] extern crate log;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">#[macro_use] extern crate log;
 extern crate env_logger;
 
 fn main() {
-    // app here
+    &#x2F;&#x2F; app here
     app.set_debug(true);
     app.set_log_level();
     env_logger::init().unwrap();
-    debug!(&quot;* Running on http://localhost:5000/&quot;);
+    debug!(&quot;* Running on http:&#x2F;&#x2F;localhost:5000&#x2F;&quot;);
     app.run(&quot;127.0.0.1:5000&quot;);
 }
 </code></pre>
 <h2 id="redirects-and-errors">Redirects And Errors</h2>
-<pre><code>use pencil::{redirect, abort};
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use pencil::{redirect, abort};
 
 fn github(_: &amp;mut Request) -&gt; PencilResult {
-    return redirect(&quot;https://github.com/&quot;, 302);
+    return redirect(&quot;https:&#x2F;&#x2F;github.com&#x2F;&quot;, 302);
 }
 
 fn login(_: &amp;mut Request) -&gt; PencilResult {
@@ -166,14 +166,14 @@ fn login(_: &amp;mut Request) -&gt; PencilResult {
 }
 
 fn main() {
-    // app here
-    app.get(&quot;/github&quot;, &quot;github&quot;, github);
-    app.get(&quot;/login&quot;, &quot;login&quot;, login);
+    &#x2F;&#x2F; app here
+    app.get(&quot;&#x2F;github&quot;, &quot;github&quot;, github);
+    app.get(&quot;&#x2F;login&quot;, &quot;login&quot;, login);
 }
 </code></pre>
 <h2 id="request-and-response-objects">Request And Response Objects</h2>
 <p>They are really easy to use, check docs for more details.</p>
-<pre><code>fn search(request: &amp;mut Request) -&gt; PencilResult {
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn search(request: &amp;mut Request) -&gt; PencilResult {
     let keyword = match request.args().get(&quot;q&quot;) {
         Some(q) =&gt; q as &amp;str,
         None =&gt; &quot;&quot;,
@@ -182,12 +182,12 @@ fn main() {
 }
 
 fn main() {
-    // app here
-    app.get(&quot;/search&quot;, &quot;search&quot;, search);
+    &#x2F;&#x2F; app here
+    app.get(&quot;&#x2F;search&quot;, &quot;search&quot;, search);
 }
 </code></pre>
 <h2 id="before-after-request">Before/After Request</h2>
-<pre><code>extern crate typemap;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">extern crate typemap;
 
 use typemap::Key;
 
@@ -201,12 +201,12 @@ fn before_request(request: &amp;mut Request) -&gt; Option&lt;PencilResult&gt; {
 }
 
 fn main() {
-    // app here
+    &#x2F;&#x2F; app here
     app.before_request(before_request);
 }
 </code></pre>
 <h2 id="modular-applications">Modular Applications</h2>
-<pre><code>use pencil::method::Get;
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use pencil::method::Get;
 use pencil::Module;
 
 fn hi_module(_: &amp;mut Request) -&gt; PencilResult {
@@ -214,9 +214,9 @@ fn hi_module(_: &amp;mut Request) -&gt; PencilResult {
 }
 
 fn main() {
-    // app here
-    let mut demo_module = Module::new(&quot;demo&quot;, &quot;/web/hello/demo&quot;);
-    demo_module.route(&quot;/demo/hi&quot;, &amp;[Get], &quot;hi&quot;, hi_module);
+    &#x2F;&#x2F; app here
+    let mut demo_module = Module::new(&quot;demo&quot;, &quot;&#x2F;web&#x2F;hello&#x2F;demo&quot;);
+    demo_module.route(&quot;&#x2F;demo&#x2F;hi&quot;, &amp;[Get], &quot;hi&quot;, hi_module);
     app.register_module(demo_module);
 }
 </code></pre>
@@ -288,7 +288,7 @@ fn main() {
     <p class="last-updated">
       
       
-        Last updated 24 May 2024 -
+        Last updated 22 July 2024 -
       
 
       <a href="https://github.com/rust-net-web/arewewebyet/#license">CC-BY-4.0</a>

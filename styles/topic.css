@@ -1,1 +1,1 @@
-.upcoming{margin:0.5rem 0;padding:0;list-style:none}.upcoming li{display:inline;margin:0;padding:0}.upcoming li p{display:inline}.upcoming li:not(:last-of-type):after{display:inline;content:" ,"}.upcoming li:last-of-type:after{display:inline;content:"."}
+.upcoming{margin:.5rem 0;padding:0;list-style:none}.upcoming li{display:inline;margin:0;padding:0}.upcoming li p{display:inline}.upcoming li:not(:last-of-type):after{display:inline;content:" ,"}.upcoming li:last-of-type:after{display:inline;content:"."}

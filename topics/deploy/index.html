@@ -4,21 +4,21 @@
 <head>
   <meta charset=utf-8>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=stylesheet href=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;styles.css>
-  <link rel=stylesheet href=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/styles.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/gh-fork-ribbon.css>
   <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
   <title>Deployment » AWWY?</title>
   <meta name="description"
     content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
 
-  <link rel="icon" href="https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;favicon.ico">
+  <link rel="icon" href="https://www.arewewebyet.org/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
   <!--  ALL THE STANDARDS for an image!-->
-  <meta itemprop="image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
-  <meta name="twitter:image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
-  <meta property="og:image" content=https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;screenshot.png />
+  <meta itemprop="image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta name="twitter:image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta property="og:image" content=https://www.arewewebyet.org/screenshot.png />
 
   <!-- Open Graph extra -->
   <meta property="og:site_name" content="Are We Web Yet?" />
@@ -42,30 +42,48 @@
 
   
 
-  <h2>Heroku <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+  <h2>Heroku 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
  <i class="icon fa fa-dot-circle-o"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p><a href="https://www.heroku.com/">Heroku</a> is a cloud PaaS tool that supports collections of languages. It does not support Rust natively, however, you can run Heroku with <a href="https://github.com/emk/heroku-buildpack-rust">github.com/emk/heroku-buildpack-rust</a>, a popular but unofficial buildpack.</p>
-<h2>AWS Lambda<span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
+<h2>AWS Lambda
+<span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
  <i class="icon fa fa-check-circle"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p><a href="https://aws.amazon.com/lambda/">AWS Lambda</a> supports Rust natively with an <a href="https://github.com/awslabs/aws-lambda-rust-runtime">opensource runtime</a>! There is also an unofficial but very popular AWS SDK, <a href="/topics/services/#pkg-rusoto_core">rusoto</a>.</p>
-<h2>Docker <span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
+<h2>Docker 
+<span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
  <i class="icon fa fa-check-circle"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p>There are <a href="https://github.com/rust-lang-nursery/docker-rust">official docker images</a> for rust (<a href="https://hub.docker.com/_/rust/"><code>rust</code></a>) with over 10+ Million downloads! There are also nightly images (<a href="https://hub.docker.com/r/rustlang/rust/"><code>rustlang/rust</code></a>) if your application requires it. If you use docker's <a href="https://docs.docker.com/develop/develop-images/multistage-build/">multi-stage builds</a>, you can build your application binary and then copy it into a container. This allows you to avoid deploying the entire compilation toolchain with your web application.</p>
-<h2>Cloud-Native Buildpacks <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+<h2>Cloud-Native Buildpacks 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
  <i class="icon fa fa-dot-circle-o"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p><a href="https://buildpacks.io/">Cloud-Native Buildpacks</a> is a CNCF project that provides a specification for automatically transforming source code into OCI images you can run on any cloud. Paketo Buildpacks, a popular implementation of the Cloud-Native Buildpacks specification, has a <a href="https://github.com/paketo-community/rust/">Rust buildpack</a> that supports transforming your Rust source code into OCI images.</p>
 <p>Present features: pick your Rust version including nightly, automatically detects your binaries and configures the container to run them, supports projects with multiple binaries &amp; workspace projects, supports installing additional tools via <code>cargo install</code>, can optionally install <code>tini</code> for proper pid1 handling, can generate images as small as a few MB plus your binaries, and loads of caching for fast rebuilds.</p>
-<h2>Vercel <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+<h2>Vercel 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
  <i class="icon fa fa-dot-circle-o"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p><a href="https://vercel.com/">▲ Vercel</a>, (formerly Zeit) is a cloud platform for serverless functions. There is a community rust runtime, <a href="https://github.com/vercel-community/rust">vercel-rust</a>.</p>
-<h2>Unikernels <span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+<h2>Unikernels 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
  <i class="icon fa fa-chevron-circle-up"></i>
- </span></h2>
+ </span>
+
+</h2>
 <p>Unikernels are the rising star and newest hot thing to do big scale deployment. With Rust being a system language unikernels are an obvious approach to the problem and doing your research you'll find that there is a lot happening here indeed. There's a number of unikernels which support rust:</p>
 <ul>
 <li><a href="https://github.com/nanovms/nanos">nanos</a></li>
@@ -137,7 +155,7 @@
     <p class="last-updated">
       
       
-        Last updated 24 May 2024 -
+        Last updated 22 July 2024 -
       
 
       <a href="https://github.com/rust-net-web/arewewebyet/#license">CC-BY-4.0</a>
