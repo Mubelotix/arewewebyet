@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet href=https://www.arewewebyet.org/styles.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Lower Web-Stack » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="https://www.arewewebyet.org/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta name="twitter:image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta property="og:image" content=https://www.arewewebyet.org/screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <main role="content" class="content">
+    <img src="/rust.png" alt="" class="rust-logo">
+    
+<article class="article">
+
+  <h1>Lower Web-Stack 
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="icon fa fa-check-circle-o"></i>
+ </span>
+</h1>
+
+  
+  <p>A strong lower web-stack is important not only to build strong web frameworks on top, but also to allow performance critical systems to reach deeper to squeeze out extra juice. Rust has a good support on HTTP servers, even an HTTP2 implementation, websockets and other protocols.</p>
+
+  
+
+  <h2 id="http-stack">HTTP Stack</h2>
+
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-async-h1" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-06-01, last updated: 2023-10-10">async-h1</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/async-h1"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;async-h1"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;http-rs&#x2F;async-h1"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-async-h1"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/async-h1.svg" />
+    <img src="https://img.shields.io/crates/d/async-h1.svg" />
+    <img src="https://img.shields.io/crates/l/async-h1.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/http-rs&#x2F;async-h1.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Asynchronous HTTP 1.1 parser.
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-h2" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-03-09, last updated: 2024-05-17">h2</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/h2"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;h2"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;hyperium&#x2F;h2"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-h2"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/h2.svg" />
+    <img src="https://img.shields.io/crates/d/h2.svg" />
+    <img src="https://img.shields.io/crates/l/h2.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/hyperium&#x2F;h2.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    An HTTP&#x2F;2 client and server
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-hyper" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-22, last updated: 2024-07-09">hyper</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/hyper"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;hyper.rs"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;hyper"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;hyperium&#x2F;hyper"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-hyper"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/hyper.svg" />
+    <img src="https://img.shields.io/crates/d/hyper.svg" />
+    <img src="https://img.shields.io/crates/l/hyper.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/hyperium&#x2F;hyper.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A fast and correct HTTP library.
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-tiny_http" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-07, last updated: 2022-10-06">tiny_http</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tiny_http"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;tiny-http.github.io&#x2F;tiny-http&#x2F;tiny_http&#x2F;index.html"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;tiny-http&#x2F;tiny-http"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-tiny_http"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tiny_http.svg" />
+    <img src="https://img.shields.io/crates/d/tiny_http.svg" />
+    <img src="https://img.shields.io/crates/l/tiny_http.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/tiny-http&#x2F;tiny-http.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Low level HTTP server library
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="websocket">Websocket</h2>
+
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-tungstenite" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-03-17, last updated: 2024-06-02">tungstenite</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tungstenite"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;snapview&#x2F;tungstenite-rs"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tungstenite&#x2F;0.23.0"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;snapview&#x2F;tungstenite-rs"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-tungstenite"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tungstenite.svg" />
+    <img src="https://img.shields.io/crates/d/tungstenite.svg" />
+    <img src="https://img.shields.io/crates/l/tungstenite.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/snapview&#x2F;tungstenite-rs.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Lightweight stream-based WebSocket implementation
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-async-tungstenite" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-15, last updated: 2024-07-17">async-tungstenite</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/async-tungstenite"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;sdroege&#x2F;async-tungstenite"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;async-tungstenite"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sdroege&#x2F;async-tungstenite"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-async-tungstenite"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/async-tungstenite.svg" />
+    <img src="https://img.shields.io/crates/d/async-tungstenite.svg" />
+    <img src="https://img.shields.io/crates/l/async-tungstenite.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/sdroege&#x2F;async-tungstenite.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Async binding for Tungstenite, the Lightweight stream-based WebSocket implementation
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-tokio-tungstenite" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-03-17, last updated: 2024-06-16">tokio-tungstenite</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tokio-tungstenite"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;snapview&#x2F;tokio-tungstenite"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tokio-tungstenite&#x2F;0.23.1"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;snapview&#x2F;tokio-tungstenite"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-tokio-tungstenite"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tokio-tungstenite.svg" />
+    <img src="https://img.shields.io/crates/d/tokio-tungstenite.svg" />
+    <img src="https://img.shields.io/crates/l/tokio-tungstenite.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/snapview&#x2F;tokio-tungstenite.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Tokio binding for Tungstenite, the Lightweight stream-based WebSocket implementation
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-websocket" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-29, last updated: 2024-03-31">websocket</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/websocket"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;websocket&#x2F;"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;websockets-rs&#x2F;rust-websocket"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-websocket"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/websocket.svg" />
+    <img src="https://img.shields.io/crates/d/websocket.svg" />
+    <img src="https://img.shields.io/crates/l/websocket.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/websockets-rs&#x2F;rust-websocket.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    [deprecated] A WebSocket (RFC6455) library for Rust.
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-websocket-base" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-11-07, last updated: 2022-07-24">websocket-base</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/websocket-base"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;websocket-base&#x2F;"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;websockets-rs&#x2F;rust-websocket"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-websocket-base"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/websocket-base.svg" />
+    <img src="https://img.shields.io/crates/d/websocket-base.svg" />
+    <img src="https://img.shields.io/crates/l/websocket-base.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/websockets-rs&#x2F;rust-websocket.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A WebSocket (RFC6455) library for Rust: low-level component. It contains HTTP-independent aspect of WebSockets
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-wtx" class="pkg">
+  <span class="pkg-name"
+    title="est. 2023-08-14, last updated: 2024-02-11">wtx</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/wtx"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;c410-f3r.github.io&#x2F;wtx"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;wtx"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;c410-f3r&#x2F;wtx"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-wtx"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/wtx.svg" />
+    <img src="https://img.shields.io/crates/d/wtx.svg" />
+    <img src="https://img.shields.io/crates/l/wtx.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/c410-f3r&#x2F;wtx.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A collection of different transport implementations and related tools focused primarily on web technologies.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="other-protocols">Other protocols</h2>
+
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-quinn" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-10-02, last updated: 2024-06-07">quinn</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/quinn"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;quinn-rs&#x2F;quinn"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-quinn"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/quinn.svg" />
+    <img src="https://img.shields.io/crates/d/quinn.svg" />
+    <img src="https://img.shields.io/crates/l/quinn.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/quinn-rs&#x2F;quinn.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Versatile QUIC transport protocol implementation
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-sozu" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-04-04, last updated: 2024-07-19">sozu</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/sozu"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;sozu.io"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;sozu"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sozu-proxy&#x2F;sozu"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-sozu"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/sozu.svg" />
+    <img src="https://img.shields.io/crates/d/sozu.svg" />
+    <img src="https://img.shields.io/crates/l/sozu.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/sozu-proxy&#x2F;sozu.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    sozu, a fast, reliable, hot reconfigurable HTTP reverse proxy
+  </p>
+</li>
+
+
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  <div class="alert-box">
+    <h3>Do you know something we don't?</h3>
+    <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+            href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+    </p>
+  </div>
+
+</article>
+
+  </main>
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="last-updated">
+      
+      
+        Last updated 24 July 2024 -
+      
+
+      <a href="https://github.com/rust-net-web/arewewebyet/#license">CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

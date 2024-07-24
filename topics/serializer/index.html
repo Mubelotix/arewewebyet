@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet href=https://www.arewewebyet.org/styles.css>
+  <link rel=stylesheet href=https://www.arewewebyet.org/gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Serializers » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="https://www.arewewebyet.org/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta name="twitter:image" content=https://www.arewewebyet.org/screenshot.png />
+  <meta property="og:image" content=https://www.arewewebyet.org/screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <main role="content" class="content">
+    <img src="/rust.png" alt="" class="rust-logo">
+    
+<article class="article">
+
+  <h1>Serializers 
+<span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
+ <i class="icon fa fa-check-circle"></i>
+ </span>
+</h1>
+
+  
+  <p>Serializers allow you to easily transfer states and reliably get it back – important not only when working with JSON but also backbone of many types of worker-queue systems. Many of these crates are built on top of <a href="https://www.arewewebyet.org/topics/serializer/#pkg-serde">Serde</a>, the awesome serialization framework for Rust.</p>
+
+  
+
+  
+
+  
+  
+<ul class="pkg-list">
+  
+  
+
+
+  
+<li id="pkg-async-bincode" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-05-23, last updated: 2023-11-11">async-bincode</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/async-bincode"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;jonhoo&#x2F;async-bincode"><i class="fa fa-home"></i></a>
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;jonhoo&#x2F;async-bincode.git"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-async-bincode"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/async-bincode.svg" />
+    <img src="https://img.shields.io/crates/d/async-bincode.svg" />
+    <img src="https://img.shields.io/crates/l/async-bincode.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/jonhoo&#x2F;async-bincode.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Asynchronous access to a bincode-encoded item stream.
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-bincode" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-20, last updated: 2023-03-30">bincode</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/bincode"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;bincode"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;bincode-org&#x2F;bincode"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-bincode"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/bincode.svg" />
+    <img src="https://img.shields.io/crates/d/bincode.svg" />
+    <img src="https://img.shields.io/crates/l/bincode.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/bincode-org&#x2F;bincode.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A binary serialization &#x2F; deserialization strategy for transforming structs into bytes and vice versa!
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-rmp" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-15, last updated: 2024-04-17">rmp</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rmp"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;rmp"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;3Hren&#x2F;msgpack-rust"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-rmp"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rmp.svg" />
+    <img src="https://img.shields.io/crates/d/rmp.svg" />
+    <img src="https://img.shields.io/crates/l/rmp.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/3Hren&#x2F;msgpack-rust.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Pure Rust MessagePack serialization implementation
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-serde" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-12-05, last updated: 2024-07-06">serde</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/serde"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;serde.rs"><i class="fa fa-home"></i></a>
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;serde"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;serde-rs&#x2F;serde"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-serde"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/serde.svg" />
+    <img src="https://img.shields.io/crates/d/serde.svg" />
+    <img src="https://img.shields.io/crates/l/serde.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/serde-rs&#x2F;serde.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A generic serialization&#x2F;deserialization framework
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-serde_json" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-08-07, last updated: 2024-07-01">serde_json</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/serde_json"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;serde_json"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;serde-rs&#x2F;json"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-serde_json"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/serde_json.svg" />
+    <img src="https://img.shields.io/crates/d/serde_json.svg" />
+    <img src="https://img.shields.io/crates/l/serde_json.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/serde-rs&#x2F;json.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A JSON serialization file format
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-serde_yaml" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-27, last updated: 2024-03-25">serde_yaml</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/serde_yaml"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;serde_yaml&#x2F;"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;serde-yaml"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-serde_yaml"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/serde_yaml.svg" />
+    <img src="https://img.shields.io/crates/d/serde_yaml.svg" />
+    <img src="https://img.shields.io/crates/l/serde_yaml.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/dtolnay&#x2F;serde-yaml.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    YAML data format for Serde
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-serde_bytes" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-04-08, last updated: 2024-06-25">serde_bytes</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/serde_bytes"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;serde_bytes"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;serde-rs&#x2F;bytes"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-serde_bytes"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/serde_bytes.svg" />
+    <img src="https://img.shields.io/crates/d/serde_bytes.svg" />
+    <img src="https://img.shields.io/crates/l/serde_bytes.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/serde-rs&#x2F;bytes.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    Optimized handling of `&amp;[u8]` and `Vec&lt;u8&gt;` for Serde
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-toml" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-11, last updated: 2024-07-17">toml</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/toml"><i class="fa fa-cube"></i></a>
+    
+
+    
+    <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;toml-rs&#x2F;toml"><i class="fa fa-home"></i></a>
+    
+
+
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;toml-rs&#x2F;toml"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-toml"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/toml.svg" />
+    <img src="https://img.shields.io/crates/d/toml.svg" />
+    <img src="https://img.shields.io/crates/l/toml.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/toml-rs&#x2F;toml.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    A native Rust encoder and decoder of TOML-formatted files and streams. Provides
+implementations of the standard Serialize&#x2F;Deserialize traits for TOML data to
+facilitate deserializing and serializing Rust structures.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+  
+<li id="pkg-quick-xml" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-01, last updated: 2024-07-23">quick-xml</span>
+
+  <div class="pkg-links">
+    
+    <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/quick-xml"><i class="fa fa-cube"></i></a>
+    
+
+    
+
+
+    
+    <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;quick-xml"><i class="fa fa-book"></i></a>
+    
+
+    
+    <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;tafia&#x2F;quick-xml"><i class="fa fa-code"></i></a>
+    
+
+    <a class="pkg-link action" title="permalink" href="#pkg-quick-xml"><i
+            class="fa fa-hashtag"></i></a>
+  </div>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/quick-xml.svg" />
+    <img src="https://img.shields.io/crates/d/quick-xml.svg" />
+    <img src="https://img.shields.io/crates/l/quick-xml.svg" />
+    
+      
+      <img src="https://img.shields.io/github/last-commit/tafia&#x2F;quick-xml.svg">
+    
+    </p>
+  
+  <p class="pkg-desc">
+    High performance xml reader and writer
+  </p>
+</li>
+
+
+  
+</ul>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="alert-box">
+    <h3>Do you know something we don't?</h3>
+    <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+            href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+    </p>
+  </div>
+
+</article>
+
+  </main>
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="last-updated">
+      
+      
+        Last updated 24 July 2024 -
+      
+
+      <a href="https://github.com/rust-net-web/arewewebyet/#license">CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>
