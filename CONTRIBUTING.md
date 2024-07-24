@@ -11,8 +11,13 @@ right procedure outlined below.
 
 ## Adding or Removing a package
 
-If a package isn't listed on the website yet, feel free to send us a pull-request for it. The only requirement 
-is that the package is related to the web-stack, open source and is publicly available via [crates.io](http://www.crates.io).
+If a package isn't listed on the website yet, feel free to send us a pull-request if it satisfies the following requirements:
+
+- The package is related to the web-stack, open source and publicly available via [crates.io](https://crates.io)
+- The package's repository is not archived
+- The package is not flagged as unmaintained in [the Rust security advisory database](https://rustsec.org/)
+- The package has at least 4k recent downloads on [crates.io](https://crates.io)
+
 Packages are separated into separate `topics`. Topics are located in the `context/topics` directory. Every topic contains 
 a TOML frontmatter, from which the HTML is generated:
 
@@ -30,6 +35,7 @@ packages = [
 ```
 
 To add or remove crates from a topic, simple add or remove the crate from it's package array (`extra.packages`). 
+We won't list more than 10 entries for each topic.
 
 If you are in a hurry and don't have the time to prepare the PR, you can also submit an issue requesting for the 
 package to be added. *Make sure you mark the issue with the `please-add`-tag*.
